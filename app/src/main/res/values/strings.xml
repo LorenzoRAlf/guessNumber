@@ -3,4 +3,7 @@
     <string name="attempts_0">Attempts: 0</string>
     <string name="guess_the_number">Guess the Number!</string>
     <string name="guesses_0">Guesses: 0</string>
+    <string name="guess">GUESS</string>
+    <string name="back">Back</string>
+    <string name="ranking">Ranking</string>
 </resources>
