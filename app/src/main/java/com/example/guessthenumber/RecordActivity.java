@@ -21,7 +21,6 @@ public class RecordActivity extends AppCompatActivity {
 
         Bundle extras= getIntent().getExtras();
         Serializable records = extras.getSerializable("records");
-        records.
 
     }
 
