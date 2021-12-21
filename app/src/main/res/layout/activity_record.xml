@@ -4,12 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:scaleX="2"
-    android:scaleY="2"
     tools:context=".RecordActivity">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/rankingView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:scaleX="3"
@@ -20,10 +18,10 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.269" />
+        app:layout_constraintVertical_bias="0.051" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/leastTriesView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:scaleX="2.12"
@@ -33,47 +31,34 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.334" />
+        app:layout_constraintVertical_bias="0.148" />
+
+    <ListView
+        android:id="@+id/recordsView"
+        android:layout_width="373dp"
+        android:layout_height="466dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leastTriesView" />
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="83dp"
-        android:layout_height="42dp"
+        android:id="@+id/backButton"
+        android:layout_width="106dp"
+        android:layout_height="59dp"
+        android:onClick="goBack"
         android:scaleX="0.6"
         android:scaleY="0.6"
         android:text="@string/back"
-        android:onClick="goBack"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.268"
+        app:layout_constraintHorizontal_bias="0.079"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.748"
+        app:layout_constraintVertical_bias="0.937"
         tools:ignore="MissingConstraints" />
 
-    <TableLayout
-        android:layout_width="409dp"
-        android:layout_height="257dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.481">
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-    </TableLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
